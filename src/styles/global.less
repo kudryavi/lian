@@ -1,29 +1,40 @@
 body {
 	font-family: 'Roboto', sans-serif;
+	box-sizing: border-box;
     background-color: #fff;
+}
 
-    .container {
-    	width: 1140px;
-    	margin: 0 auto;
+.container {
+    width: 1140px;
+    margin: 0 auto;
 
-    	@media (max-width: 1199px) {
-			width: 970px;
-		}
+    @media (max-width: 1199px) {
+		width: 970px;
+	}
 
-		@media (max-width: 991px) {
-			width: 750px;
-		}
+	@media (max-width: 991px) {
+		width: 750px;
+	}
 
-		@media (max-width: 767px) {
-			width: auto;
-		}
+	@media (max-width: 767px) {
+		width: auto;
+	}
+}
 
-    	.wrapper {
-    		display: flex;
-    		justify-content: space-around;
-    	}
+.wrapper {
+    display: flex;
+
+    &--around {
+    	justify-content: space-around;
+    }
+
+    &--between {
+    	justify-content: space-between;
+    	
     }
 }
+ 
+
 
 ul {
 	list-style: none;

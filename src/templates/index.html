@@ -9,34 +9,35 @@
     <title>Lian</title>
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="container">
-            <div class="wrapper">
-                <div class="logo">
-                    <a href="index.html"><img src="img/logo.png" alt="logo"></a>
-                </div>
-                <div class="line">
-                    <img src="img/highlight.png" alt="highlight">
-                </div>
-                <nav class="main-menu">
-                    <div class="hamburger">
+            <div class="wrapper wrapper--between">
+                <div class="mobile-menu">
+                    <div class="mobile-menu__hamburger">
                         <i class="fas fa-bars"></i>
                     </div>
+                    <nav class="mobile-menu__navigation">
+                        <ul class="mobile-menu__list">
+                            <li class="mobile-menu__item"><a class="mobile-menu__link" href="/">HOME</a></li>
+                            <li class="mobile-menu__item"><a class="mobile-menu__link" href="">About</a></li>
+                            <li class="mobile-menu__item"><a class="mobile-menu__link" href="">Portfolio</a></li>
+                            <li class="mobile-menu__item"><a class="mobile-menu__link" href="">BLOG</a></li>
+                            <li class="mobile-menu__item"><a class="mobile-menu__link" href="">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <a class="logo" href="/"></a>
+                <nav class="main-menu">
                     <ul class="main-menu__list">
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Portfolio</a></li>
-                        <li><a href="">BLOG</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li class="main-menu__item"><a class="main-menu__link" href="/">HOME</a></li>
+                        <li class="main-menu__item"><a class="main-menu__link" href="">About</a></li>
+                        <li class="main-menu__item"><a class="main-menu__link" href="">Portfolio</a></li>
+                        <li class="main-menu__item"><a class="main-menu__link" href="">BLOG</a></li>
+                        <li class="main-menu__item"><a class="main-menu__link" href="">Contact</a></li>
                     </ul>
                 </nav>
                 <div class="search">
                     <i class="fas fa-search"></i>
-                    <div class="form-search">
-                        <form action="" method="">
-                            <input type="search" name="search" autofocus>
-                        </form>
-                    </div>
                 </div>
             </div>
         </div>
@@ -50,5 +51,41 @@
             Minimal Freelance Portfolio
         </div>
     </div>
+
+    <main>
+        <div class="container">
+            <nav class="menu-technology">
+                <ul class="menu-technology__list">
+                    <li class="menu-technology__list--item">
+                        <a href="">All</a>
+                        <img src="img/line.png">
+                    </li>
+                    <li class="menu-technology__list--item">
+                        <a href="">Logo</a>
+                        <img src="img/line.png">
+                    </li>
+                    <li class="menu-technology__list--item">
+                        <a href="">Mobile App</a>
+                        <img src="img/line.png">
+                    </li>
+                    <li class="menu-technology__list--item">
+                        <a href="">WordPress</a>
+                        <img src="img/line.png">
+                    </li>
+                    <li class="menu-technology__list--item">
+                        <a href="">Web Design</a>
+                        <img src="img/line.png">
+                    </li>
+                    <li class="menu-technology__list--item">
+                        <a href="">UI/IX</a>
+                        <img src="img/line.png">
+                    </li>
+                    <li class="menu-technology__list--item">
+                        <a href="">Branding</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </main>
 </body>
 </html>
