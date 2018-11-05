@@ -11,6 +11,7 @@
 	}
 
 	&__item {
+		/*position: relative;*/
 		display: flex;
 		margin-right: 20px;
 		align-items: center;
@@ -22,9 +23,17 @@
 		&:last-child {
 			margin-right: 0;
 		}
+
+		/*&:after {
+			content: "";
+			position: absolute;
+			top: 10px;
+			left: 5px;
+			background-image: url("img/main/line.png");
+		}*/
 	}
 
-	&__link {
+	&__link {		
 		font-size: 14px;
 		font-weight: bold;
 		text-transform: uppercase;
