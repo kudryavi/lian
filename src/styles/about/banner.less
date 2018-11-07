@@ -1,0 +1,44 @@
+.banner {
+	padding: 117px 0;
+	background: #fafafa url("../img/about/banner.png") no-repeat center;
+
+	@media (max-width: 767px)  {
+		padding: 50px 0;
+	}
+
+	&__logo {
+		width: 100%;
+		max-width: 590px;
+		padding: 5px 0;
+		font-size: 48px;
+		font-weight: 300;
+		text-align: center;
+		text-transform: uppercase;
+		letter-spacing: 5px;
+		color: #fff;
+		background-color: #000;
+
+		@media (max-width: 767px) {
+			max-width: 270px;
+			margin: 0 auto;
+			font-size: 22px;
+			letter-spacing: normal;
+		}
+	}
+
+	&__welcome {
+		margin-top: 40px;
+		font-size: 18px;
+		font-weight: 300;
+		text-transform: uppercase;
+		letter-spacing: 7px;
+		color: #000;
+
+		@media (max-width: 767px) {
+			margin-top: 20px;
+			font-size: 16px;
+			text-align: center;
+			letter-spacing: normal;
+		}
+	}
+}

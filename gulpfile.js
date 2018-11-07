@@ -12,7 +12,7 @@ var config = {
     path: './dist'
   },
   html: {
-    src: './src/templates/index.html',
+    src: './src/templates/**',
     destination: 'dist/'
   },
   css: {
