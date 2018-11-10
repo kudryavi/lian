@@ -19,6 +19,10 @@ var config = {
     src: './src/styles/style.less',
     destination: 'dist/css'
   },
+  fonts: {
+    src: './src/fonts/**',
+    destination: 'dist/fonts'
+  },
   js: {
     src: './src/js/**',
     destination: 'dist/js'
@@ -62,10 +66,15 @@ gulp.task('images', function() {
     .pipe(gulp.dest(config.img.destination))
 });
 
+gulp.task('fonts', function() {
+  gulp.src(config.fonts.src)
+    .pipe(gulp.dest(config.fonts.destination))
+});
+
 gulp.task('watch', function () {
   log('Watching file');
   gulp.watch(config.watch, ['build']);
 });
 
-gulp.task('build', ['html','less','images','scripts']);
+gulp.task('build', ['html','less','images', 'fonts', 'scripts']);
 gulp.task('default',['build','connect','watch']);

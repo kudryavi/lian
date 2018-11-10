@@ -1,9 +1,23 @@
 .slider {
-    padding: 265px 0 280px;
-    background: url("../img/slider1.png") no-repeat 0 0;
-    background-size: cover;
+    // max-width: 1000px;
+    // margin: 0 auto;
+    
+    
+    &__item {
+        padding: 265px 0 280px;
 
-    .promo-name {
+        &--first {
+            background: url("../img/slider1.png") no-repeat 0 0;
+            background-size: cover;
+        }
+
+        &--second {
+            background: url("../img/slider2.png") no-repeat 0 0;
+            background-size: cover;
+        }
+    }
+
+    &__name {
         width: 700px;
         margin: 0 auto;
         font-weight: lighter;
@@ -17,7 +31,7 @@
         background-color: #000;
     }
 
-    .promo {
+    &__title {
         width: 580px;
         margin: 35px auto 0;
         font-weight: lighter;
