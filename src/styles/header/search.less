@@ -12,16 +12,18 @@
 	}
 
 	&__form {
-		display: none;
 		position: absolute;
 		top: 9px;
-		right: -155px;
-		transition: right .5s ease;		
+		left: -120px;
+		display: none;
+		// transition: .5s ease;
+		// opacity: 0;
+		// z-index: -1;		
 		
 		&--open {
 			display: block;
-			// transform: translateX(-130px);
-			right: -25px;
+		// 	opacity: 1;
+		// 	z-index: 1;
 		}
 	}
 }

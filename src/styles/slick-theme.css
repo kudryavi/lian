@@ -36,17 +36,18 @@
 
     cursor: pointer;
 
-    color: transparent;
+    color: white;
     border: none;
     outline: none;
     background: transparent;
+    z-index: 10;
 }
 .slick-prev:hover,
 .slick-prev:focus,
 .slick-next:hover,
 .slick-next:focus
 {
-    color: transparent;
+    color: white;
     outline: none;
     background: transparent;
 }
@@ -71,8 +72,7 @@
     line-height: 1;
 
     opacity: .75;
-    color: black;
-    z-index: 100000000;
+    
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -179,11 +179,11 @@
 .slick-dots li button:before
 {
     font-family: 'slick';
-    font-size: 6px;
+    font-size: 15px;
     line-height: 20px;
 
     position: absolute;
-    top: 0;
+    top: -78px;
     left: 0;
 
     width: 20px;
