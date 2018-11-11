@@ -8,7 +8,7 @@ $(document).ready(function(){
   	$('.mobile-menu__list').toggleClass('mobile-menu__list--open')
   });
 
-  $('.search').click(function() {
+  $('.search__icon').click(function() {
   	$('.search__form').toggleClass('search__form--open')
   })
 });

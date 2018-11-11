@@ -1,24 +1,31 @@
 .gallery {
 	margin-top: 25px;
 
-	&__item {
-		// position: relative;
+	&__link {
+		position: relative;
 		display: block;
-		margin: 0 auto 30px;
-		max-width: 100%;
-		// opacity: .7;
+
+		&:before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: rgba(0,0,0,.5) url("../../img/main/gallery/plus.png") no-repeat center;
+			opacity: 0;
+			z-index: 10;
+		}
+
+		&:hover:before { 
+			opacity: 1; 
+		}
 	}
 
-	&__link {
-
-		&:hover {
-			// position: absolute;
-			background-color: rgba(0, 0, 0, .8);
-		// 	background-image: url("../img/main/gallery/horiz-l.png"),
-		// 				 	url("../img/main/gallery/vertic-l.png");
-		// 	// opacity: 1;
-		// }
-		}
+	&__item {
+		position: relative;
+		display: block;
+		margin: 0 auto 30px;
 	}
 
 	&__btn {
