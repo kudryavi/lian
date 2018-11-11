@@ -2,7 +2,7 @@
 
 ```sh
 # Clone this repository
-$ git clone https://github.com/sasha-kazakevich/z-01.git new_project
+$ git clone https://github.com/kudryavi/lian
 $ cd new_project
 
 # install dependencies
