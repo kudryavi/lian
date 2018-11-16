@@ -2,16 +2,44 @@
 	padding-top: 73px;
 	background-color: #fafafa;
 
+	@media (max-width: 767px) {
+		padding-top: 20px;
+	}
+
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+
+		@media (max-width: 991px) {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
 	&__item {
 		margin-right: 53px;
+		width: 50%;
+
+		@media (max-width: 991px) {
+			margin-right: 0;
+			margin-bottom: 20px;
+		}
 
 		&:last-child {
 			margin-right: 0;
+
+			@media (max-width: 991px) {
+				margin-bottom: 0;
+			}
 		}
 	}
 
 	&__story {
 		padding-top: 7px;
+
+		@media (max-width: 991px) {
+			text-align: center;
+		}
 	}
 
 	&__text {
@@ -24,6 +52,13 @@
 		&:last-child {
 			margin-top: 31px;
 			margin-bottom: 30px;
+		}
+	}
+
+	&__title {
+
+		@media (max-width: 991px) {
+			text-align: center;
 		}
 	}
 
@@ -42,7 +77,8 @@
 	&__field {
 		position: relative;
 		height: 10px;
-		width: 552px;
+		max-width: 552px;
+		width: 100%;
 		background-color: #ebebeb;
 	}
 
@@ -51,13 +87,14 @@
 		top: 40%;
 		left: 5px;
 		height: 2px;
-		width: 542px;
+		max-width: 542px;
 		background-color: #a1a1a1;
 
 		&::before {
 			content: '';
 			position: absolute;
 			top: -55px;
+			left: 99%;
 			width: 50px;
 			height: 40px;
 			padding-top: 17px;
@@ -70,6 +107,7 @@
 			content: '';
 			position: absolute;
 			top: -7px;
+			left: 99%;
 			width: 15px;
 			height: 15px; 
 			background: url("../img/about/elipse.png") no-repeat center;
@@ -80,11 +118,6 @@
 
 			&::before {
 				content: '90%';
-				left: 491px;
-			}
-
-			&::after {
-				left: 488px;
 			}
 		}
 
@@ -93,11 +126,7 @@
 
 			&::before {
 				content: '95%';
-				left: 500px;
-			}
-
-			&::after {
-				left: 515px;
+				left: 93%;
 			}
 		}
 
@@ -106,11 +135,6 @@
 
 			&::before {
 				content: '50%';
-				left: 274px;
-			}
-
-			&::after {
-				left: 271px;
 			}
 		}
 
@@ -119,11 +143,6 @@
 
 			&::before {
 				content: '85%';
-				left: 464px;
-			}
-
-			&::after {
-				left: 461px;
 			}
 		}
 	}
