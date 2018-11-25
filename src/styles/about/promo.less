@@ -11,12 +11,20 @@
 	    text-transform: uppercase;
 	    letter-spacing: 12px;
 	    color: #000;
+
+	    @media (max-width: 767px) {
+	    	font-size: 20px;
+	    }
 	}
 
 	&__text {
 		font-size: 14px;
 		line-height: 30px;
-		letter-spacing: 0.35px;
+		letter-spacing: .35px;
 		color: #777;
+
+		@media (max-width: 767px) {
+			padding: 0 5px;
+		}
 	}
 }

@@ -1,0 +1,65 @@
+.button {
+	display: flex;
+	background-color: #fff; 
+
+	&__item {
+		position: relative;
+		display: block;
+		max-width: 165px;
+		width: 100%;
+		padding-top: 25px;
+		padding-bottom: 20px;
+		font-size: 13px;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: .975px;
+		color: #071f08;
+		border-left: 1px solid #ebebeb;
+		border-right: 1px solid #ebebeb;
+		box-sizing: border-box;
+
+		&--prev {
+			padding-left: 55px;
+
+			&:before {
+				content: "\f104";
+				position: absolute;
+				top: 26px;
+				left: 37px;
+				width: 7px;
+				height: 10px;
+				font-family: Font Awesome\ 5 Free;
+			}
+		}
+
+		&--next {
+			margin-right: auto;
+			padding-left: 55px;
+			border-left: none;
+
+			&:after {
+				content: "\f105";
+				position: absolute;
+				top: 26px;
+				left: 105px;
+				width: 7px;
+				height: 10px;
+				font-family: Font Awesome\ 5 Free;
+			}
+		}
+
+		&--show-all {
+			max-width: 192px;
+			padding-left: 74px;
+
+			&:before {
+				content: "\f03a";
+				position: absolute;
+				left: 49px;
+				width: 15px;
+				height: 15px;
+				font-family: Font Awesome\ 5 Free;
+			}
+		}
+	}
+}

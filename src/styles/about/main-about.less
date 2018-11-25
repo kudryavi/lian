@@ -17,10 +17,15 @@
 	}
 
 	&__item {
-		margin-right: 53px;
 		width: 50%;
+		margin-right: 53px;		
+
+		&--img {
+			object-fit: cover;
+		}
 
 		@media (max-width: 991px) {
+			width: 100%;
 			margin-right: 0;
 			margin-bottom: 20px;
 		}
@@ -53,6 +58,10 @@
 			margin-top: 31px;
 			margin-bottom: 30px;
 		}
+
+		@media (max-width: 991px) {
+			padding: 0 5px;
+		}
 	}
 
 	&__title {
@@ -72,6 +81,10 @@
 		&--margin {
 			margin-top: 40px;
 		}
+
+		@media (max-width: 991px) {
+			margin-left: 10%;
+		}
 	}
 
 	&__field {
@@ -80,6 +93,10 @@
 		max-width: 552px;
 		width: 100%;
 		background-color: #ebebeb;
+
+		@media (max-width: 991px) {
+			margin: 0 auto;
+		}
 	}
 
 	&__indicator {
@@ -94,7 +111,7 @@
 			content: '';
 			position: absolute;
 			top: -55px;
-			left: 99%;
+			right: 0;
 			width: 50px;
 			height: 40px;
 			padding-top: 17px;
@@ -107,7 +124,7 @@
 			content: '';
 			position: absolute;
 			top: -7px;
-			left: 99%;
+			right: 0;
 			width: 15px;
 			height: 15px; 
 			background: url("../img/about/elipse.png") no-repeat center;
@@ -126,7 +143,6 @@
 
 			&::before {
 				content: '95%';
-				left: 93%;
 			}
 		}
 
