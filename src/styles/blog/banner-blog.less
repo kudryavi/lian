@@ -1,0 +1,41 @@
+.banner-blog {	
+	padding: 115px 0 118px;
+	background: url("../../img/blog/banner-blog.png") no-repeat center #fafafa;
+	background-size: cover;
+
+	@media (max-width: 767px)  {
+		padding: 50px 0;
+	}
+
+	&__logo {
+		max-width: 549px;
+		padding: 5px 0;
+		font-size: 48px;
+		font-weight: 300;
+		text-align: center;
+		text-transform: uppercase;
+		letter-spacing: 4.8px;
+		color: #fff;
+		background-color: #000;
+		box-sizing: border-box;
+
+		@media (max-width: 767px) {
+			max-width: 270px;
+			margin: 0 auto;
+			font-size: 22px;
+			letter-spacing: normal;
+		}
+	}
+
+	&__welcome {
+		margin-top: 40px;
+		letter-spacing: 7.2px;
+
+		@media (max-width: 767px) {
+			margin-top: 20px;
+			font-size: 18px;
+			text-align: center;
+			letter-spacing: normal;
+		}
+	}
+}

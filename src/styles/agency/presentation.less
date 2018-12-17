@@ -1,8 +1,10 @@
 .presentation {
-	display: flex;
 	padding-top: 70px;
-	justify-content: space-between;
 	background-color: #fafafa;
+
+	&__item {
+		width: 50%;
+	}
 
 	&__title {
 		font-size: 30px;
@@ -22,7 +24,105 @@
 	}
 
 	&__description {
+		margin-bottom: 32px;
+		padding-top: 29px;
+		padding-bottom: 51px;
 		border-top: 1px solid #ccc;
 		border-bottom: 1px solid #ccc;
+	}
+
+	&__time {
+		margin-right: 60px;
+		font-size: 14px;
+		font-weight: 700;
+		letter-spacing: .35px;
+		color: #555;
+	}
+
+	&__like {
+		margin-left: 5px;
+		font-size: 14px;
+		font-weight: 700;
+		letter-spacing: .35px;
+		color: #555;
+	}
+
+	&__text {
+		margin-top: 30px;
+		font-size: 14px;
+		letter-spacing: .35;
+		line-height: 30px;
+		color: #777;
+	}
+
+	&__title-my-role,
+	&__title-tag {
+		font-size: 16px;
+		line-height: 36px;
+		letter-spacing: .4px;
+		font-weight: 700;
+		text-transform: uppercase;
+		color: #333;
+	}
+
+	&__my-role {
+		margin-bottom: 36px;
+	}
+
+	&__tag {
+		margin-bottom: 45px;
+	}
+
+	&__my-role,
+	&__tag {
+		font-size: 16px;
+		line-height: 36px;
+		letter-spacing: .4px;
+		color: #999;
+	}
+
+	&__icon {
+		display: flex;
+	}
+
+	&__share {
+		margin-right: 15px;
+		padding: 15px 10px;
+		font-size: 13px;
+		font-weight: 700;
+		letter-spacing: .65px;
+		text-transform: uppercase;
+		color: #fff;
+		background-color: #707070;
+	}
+
+	&__share-icon {
+		margin-right: 4px;
+	}
+
+	&__list {
+		position: relative;
+		display: flex;
+		max-width: 265px;
+		width: 100%;
+		align-items: center;
+		justify-content: space-around;
+		padding: 10px;
+		background-color: #e1e1e1;
+
+		&:after {
+			content: '';
+			position: absolute;
+			top: 13px;
+			left: -7px;
+			width: 10px;
+			height: 15px;
+			background-image: url("../../img/agency/triangle.png");
+		}
+	}
+
+	&__link {
+		font-size: 14px;
+		color: #707070;
 	}
 }
