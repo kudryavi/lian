@@ -16,13 +16,9 @@
 		}
 	}
 
-	&__item {
+	&__block {
 		width: 50%;
-		margin-right: 53px;		
-
-		&--img {
-			object-fit: cover;
-		}
+		margin-right: 53px;
 
 		@media (max-width: 991px) {
 			width: 100%;
@@ -37,6 +33,10 @@
 				margin-bottom: 0;
 			}
 		}
+	}
+
+	&__img {
+		object-fit: cover;
 	}
 
 	&__story {
@@ -61,105 +61,6 @@
 
 		@media (max-width: 991px) {
 			padding: 0 5px;
-		}
-	}
-
-	&__title {
-
-		@media (max-width: 991px) {
-			text-align: center;
-		}
-	}
-
-	&__skill-name {
-		margin-top: 24px;
-		margin-bottom: 15px;
-		font-size: 16px;
-		font-weight: 700;
-		color: #2f302f;
-
-		&--margin {
-			margin-top: 40px;
-		}
-
-		@media (max-width: 991px) {
-			margin-left: 10%;
-		}
-	}
-
-	&__field {
-		position: relative;
-		height: 10px;
-		max-width: 552px;
-		width: 100%;
-		background-color: #ebebeb;
-
-		@media (max-width: 991px) {
-			margin: 0 auto;
-		}
-	}
-
-	&__indicator {
-		position: absolute;
-		top: 40%;
-		left: 5px;
-		height: 2px;
-		max-width: 542px;
-		background-color: #a1a1a1;
-
-		&::before {
-			content: '';
-			position: absolute;
-			top: -55px;
-			right: 0;
-			width: 50px;
-			height: 40px;
-			padding-top: 17px;
-			text-align: center;
-			color: #fff;
-			background: url("../img/about/flag.png") no-repeat center;
-		}
-
-		&::after {
-			content: '';
-			position: absolute;
-			top: -7px;
-			right: 0;
-			width: 15px;
-			height: 15px; 
-			background: url("../img/about/elipse.png") no-repeat center;
-		}
-
-		&--photoshop {
-			width: 90%;
-
-			&::before {
-				content: '90%';
-			}
-		}
-
-		&--branding {
-			width: 95%;
-
-			&::before {
-				content: '95%';
-			}
-		}
-
-		&--photography {
-			width: 50%;
-
-			&::before {
-				content: '50%';
-			}
-		}
-
-		&--design {
-			width: 85%;
-
-			&::before {
-				content: '85%';
-			}
 		}
 	}
 }
