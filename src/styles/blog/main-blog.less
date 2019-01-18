@@ -3,42 +3,137 @@
 	padding-bottom: 100px;
 	background-color: #fafafa;
 
+	@media (max-width: 767px) {
+		padding-right: 5px;
+		padding-bottom: 15px;
+		padding-left: 5px;
+	}
+
 	&__wrapper {
 		display: flex;
 		justify-content: space-between;
+
+		@media (max-width: 767px) {
+			flex-direction: column;
+		}
+	}
+
+	&__content-left {
+
+		@media (max-width: 767px) {
+			margin: 0 auto;
+		}
 	}
 
 	&__column {
 		max-width: 358px;
 		width: 100%;
 
+		@media (max-width: 991px) {
+			display: none;
+		}
+
+		@media (max-width: 767px) {
+			display: none;
+		}
+
 		&--middle {
 			margin: 0 30px;
+
+			@media (max-width: 1199px) {
+				margin: 0 15px;
+			}
+
+			@media (max-width: 991px) {
+				display: block;
+			}
+
+			@media (max-width: 767px) {
+				display: block;
+				margin: 0;
+			}
+		}
+
+		&--last {
+
+			@media (max-width: 991px) {
+				display: block;
+				margin-left: 30px;
+			}
+
+			@media (max-width: 767px) {
+				display: block;
+				margin: 0 auto;
+				order: -1;
+			}
+
 		}
 	}
 
 	&__item {
 		margin-bottom: 32px;
 
+		@media (max-width: 1199px) {
+			margin-bottom: 20px;
+		}
+
+		@media (max-width: 767px) {
+
+			&:last-child {
+				margin-bottom: 15px;
+			}
+		}
+
 		&--blog {
 			background-color: #fff;
+
+			@media (max-width: 767px) {
+				max-width: 100%;
+			}
 		}
 
 		&--no-technology {
 			padding: 20px 35px 40px 45px;
+
+			@media (max-width: 767px) {
+				padding: 10px;
+			}
 		}
 
 		&--technology {
 			padding: 38px 35px 40px 45px;
+
+			@media (max-width: 767px) {
+				padding: 10px;
+			}
 		}
 
 		&--img {
+			display: block;
+			width: 100%;
 			margin-bottom: 0;
 		}
 
-		&--img-hover {
-			background: url("../img/blog/first-layer.png") no-repeat center,
-						url("../img/blog/second-layer.png") no-repeat center;
+		&--hover {
+			transition: 2s ease;
+
+			&:hover {
+				background: url("../img/blog/first-layer.png") no-repeat center,
+							url("../img/blog/second-layer.png") no-repeat center;
+				background-size: cover;
+
+				.main-blog__title {
+					color: #fff;
+				}
+
+				.main-blog__review {
+					color: #e5e5e5;
+				}
+
+				.main-blog__data {
+					color: #a1a1a1;
+				}
+			}
 		}
 
 		&--form {
@@ -49,7 +144,7 @@
 				content: '\f002';
 				position: absolute;
 				top: 12px;
-				left: 315px;
+				right: 20px;
 				width: 34px;
 				height: 34px;
 				font-family: "Font Awesome 5 Free";
@@ -57,7 +152,19 @@
 				text-align: center;
 				line-height: 34px;
 				color: #fff;
-				background-color: #999;				
+				background-color: #999;
+
+				@media (max-width: 767px) {
+					margin: 0 10px 15px;
+				
+				}			
+			}
+		}
+
+		&--tags {
+
+			@media (max-width: 767px) {
+				display: none;
 			}
 		}
 	}
@@ -81,8 +188,9 @@
 		line-height: 30px;
 		color: #333;
 
-		&--img-hover {
-			color: #fff;
+		@media (max-width: 767px) {
+			font-size: 18px;
+			text-align: center;
 		}
 	}
 
@@ -104,6 +212,10 @@
 			height: 20px;
 			font-family: "Font Awesome\ 5 Free";
 		}
+
+		@media (max-width: 767px) {
+			margin-bottom: 5px;
+		}
 	}
 
 	&__review {
@@ -112,8 +224,9 @@
 		line-height: 24px;
 		color: #777;
 
-		&--img-hover {
-			color: #e5e5e5;
+		@media (max-width: 767px) {
+			margin-bottom: 15px;
+			text-align: center;
 		}
 	}
 
@@ -123,10 +236,6 @@
 		padding-left: 18px;
 		font-size: 13px;
 		color: #9a9a9a;
-
-		&--img-hover {
-			color: #a1a1a1;
-		}
 
 		&::before {
 			content: '\f133';
@@ -196,6 +305,14 @@
 		&:last-child {
 			margin-bottom: 0;
 		}
+
+		&:hover {
+			cursor: pointer;
+		}
+
+		@media (max-width: 767px) {
+			display: flex;
+		}
 	}
 
 	&__description-post {
@@ -212,6 +329,11 @@
 		font-weight: 500;
 		line-height: 20px;
 		color: #3d3d3d;
+		transition: .5s ease;
+
+		&:hover {
+			color: #825e5e;
+		}
 	}
 
 	&__data-post {
@@ -239,14 +361,43 @@
 		line-height: 30px;
 		color: #9c9c9c;
 		border: 1px solid #eee;
+		transition: color, border .5s ease;
+
+		&:hover {
+			color: #9a9a71;
+			border: 1px solid #bfbfa3;
+			cursor: pointer;
+		}
 	}
 
 	&__gallery {
 		padding: 42px 5px 15px 25px;
+
+		@media (max-width: 767px) {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			padding: 10px 0 5px;
+		}
 	}
 
 	&__gallery-item {
 		margin-bottom: 3px;
 		margin-right: 3px;
+
+		&--margin {
+			margin-right: 0;
+		}
+
+		@media (max-width: 767px) {
+			display: inline-block;
+			width: 30%;
+			margin-right: 7px;
+			text-align: center;
+
+			&--margin {
+				margin-right: 0;
+			}
+		}
 	}
 }
