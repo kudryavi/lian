@@ -48,26 +48,89 @@ a {
 	text-decoration: none;
 }
 
-.title {
-    font-size: 18px;
-    font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 7px;
-    color: #000;
+.banner {
+    padding: 115px 0 120px;
+    background-size: cover;
+
+    @media (max-width: 767px)  {
+        padding: 50px 0;
+    }
 
     &--about {
+        background: url("../img/about/banner.png") no-repeat center #fafafa;
+    }
+
+    &--agency {
+        background: url("../../img/agency/banner.png") no-repeat center #fafafa;
+    }
+
+    &--portfolio {
+        background: url("../../img/portfolio/portfolio-banner.png") no-repeat center #fafafa;
+    }
+
+    &--blog {
+        background: url("../../img/blog/banner-blog.png") no-repeat center #fafafa;
+    }
+
+    &--contact {
+        background: url("../img/about/banner.png") no-repeat center #fafafa;
+    }
+
+    &__logo {
+        max-width: 590px;
+        padding: 5px 0;
+        font-size: 48px;
+        font-weight: 300;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        color: #fff;
+        background-color: #000;
+        box-sizing: border-box;
 
         @media (max-width: 991px) {
-            text-align: center;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 767px) {
+            max-width: 270px;
+            margin: 0 auto;
+            font-size: 22px;
+            letter-spacing: normal;
+        }
+
+        .banner--agency &,
+        .banner--portfolio &,
+        .banner--blog {
+            max-width: 540px;
+            letter-spacing: 4px;
+        }
+
+        .banner--contact & {
+            max-width: 410px;
         }
     }
 
-    &--banner {
+    &__welcome {
+        margin-top: 40px;
         
         @media (max-width: 767px) {
+            margin-top: 20px;
             font-size: 16px;
             text-align: center;
             letter-spacing: normal;
+        }
+    }
+
+    &__title {
+        font-size: 18px;
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 7px;
+        color: #000;
+
+        @media (max-width: 991px) {
+            text-align: center;
         }
     }
 }
