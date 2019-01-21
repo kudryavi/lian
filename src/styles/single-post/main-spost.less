@@ -3,6 +3,11 @@
 	padding-bottom: 85px;
 	background-color: #fafafa;
 
+	@media (max-width: 767px) {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
 	&__title {
 		margin-bottom: 5px;
 		font-size: 30px;
@@ -12,11 +17,23 @@
 		text-align: center;
 		text-transform: uppercase;
 		color: #333;
+
+		@media (max-width: 991px) {
+			font-size: 26px;
+		}
+
+		@media (max-width: 767px) {
+			font-size: 16px;
+		}
 	}
 
 	&__wrapper {
 		display: flex;
 		justify-content: center;
+
+		@media (max-width: 767px) {
+			justify-content: space-between;
+		}
 	}
 
 	&__text {
@@ -35,29 +52,52 @@
 		&:last-child {
 			margin-right: auto;
 		}
+
+		@media (max-width: 767px) {
+			margin-right: auto;
+			font-size: 10px;
+		}
 	}
 
-	&__light {
+	&__image {
 		display: block;
+		width: 100%;
 		margin: 0 auto 41px;
 	}
 
 	&__content {
-		margin-left: 165px;
-		margin-right: 160px;
+		padding-left: 165px;
+		padding-right: 160px;
+
+		@media (max-width: 991px) {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+	}
+
+	&__paragraph {
 		margin-bottom: 30px;
 		font-size: 14px;
 		line-height: 30px;
 		letter-spacing: .35px;
 		color: #777;
 
-		&--title {
-			margin-bottom: 10px;
-			font-size: 16px;
-			font-weight: 700;
-			letter-spacing: .4px;
-			text-transform: uppercase;
-			color: #333;
+		@media (max-width: 767px) {
+			text-align: center;
+		}
+	}
+
+	&__content-title {
+		margin-bottom: 10px;
+		font-size: 16px;
+		font-weight: 700;
+		line-height: 30px;
+		letter-spacing: .4px;
+		text-transform: uppercase;
+		color: #333;
+
+		@media (max-width: 991px) {
+			text-align: center;
 		}
 	}
 
@@ -76,83 +116,10 @@
 		border-width: 1px 1px 1px 4px;
 		border-style: solid;
 		border-color: #e1e1e1 #e1e1e1 #e1e1e1 #c8c8c8;
-	}
 
-	&__comment-title {
-		margin-top: 55px;
-		margin-bottom: 27px;
-		font-size: 20px;
-		font-weight: 300;
-		line-height: 60px;
-		letter-spacing: 4px;
-		text-align: center;
-		text-transform: uppercase;
-		color: #000;
-	}
-
-	&__form-wrapper {
-		display: flex;
-		margin-bottom: 20px;
-		justify-content: center;
-	}
-
-	&__form-text {
-		padding-left: 10px;
-		max-width: 250px;
-		width: 100%;
-		font-size: 14px;
-		font-style: italic;
-		line-height: 32px;
-		color: #c4c4c4;
-		border: 1px solid #e1e1e1;
-		background-color: #fafafa;
-		box-sizing: border-box;
-
-		&--middle {
-			margin-right: 30px;
-			margin-left: 30px;
-		}
-
-		&:first-child {
-			border-left: 3px solid #e1e1e1;
-		}
-	}
-
-	&__form-message {
-		display: block;
-		max-width: 810px;
-		width: 100%;
-		min-height: 115px;
-		margin: 0 auto 20px;
-		padding-top: 10px;
-		padding-left: 15px;
-		font-style: italic;
-		font-size: 14px;
-		line-height: 24px;
-		color: #c4c4c4;
-		border: 1px solid #e1e1e1;
-		background-color: #fafafa;
-		resize: none;
-		box-sizing: border-box;
-	}
-
-	&__btn {
-		display: block;
-		margin: 0 auto;
-		padding: 0 35px;
-		font-size: 14px;
-		font-weight: 700;
-		line-height: 40px;
-		letter-spacing: .7px;
-		text-transform: uppercase;
-		color: #fff;
-		background-color: #000;
-		cursor: pointer;
-		transition: color, background-color 1s ease;
-
-		&:hover {
-			color: #000;
-			background-color: #fff;
+		@media (max-width: 767px) {
+			margin-left: 10px;
+			margin-right: 10px;
 		}
 	}
 }
