@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=cb7c1869-1513-4062-9da1-58c6540d5879&lang=en_US">
+    </script>
     <title>Lian</title>
 </head>
 <body>
@@ -76,23 +78,73 @@
             <div class="main-contact__wrapper">
                 <div class="main-contact__contact-inform">
                     <h3 class="main-contact__title">Office Info</h3>
-                    <p class="main-contact__logo">People Behind the Success of our Company</p>
+                    <p class="main-contact__slogan">People Behind the Success of our Company</p>
                     <div class="main-contact__line"></div>
-                    <p class="main-contact__working-hours main-contact__communication"><span class="main-contact__color-weight">Office Hours:</span>Mon-Friday 8am - 10pm</p>
-                    <p class="main-contact__address main-contact__communication"><span class="main-contact__color-weight">Address:</span>Igbalangao, Bugasong, Antique</p>
-                    <p class="main-contact__phone"><span class="main-contact__color-weight">Tell:</span>123-456-7890</p>
-                    <p class="main-contact__phone"><span  class="main-contact__color-weight">Fax:</span>123-456-7890</p>
+                    <p class="main-contact__communication">
+                        <span class="main-contact__communication--bold">Office Hours:</span>
+                        Mon-Friday 8am - 10pm
+                    </p>
+                    <p class="main-contact__communication">
+                        <span class="main-contact__communication--bold">Address:</span>
+                        Igbalangao, Bugasong, Antique
+                    </p>
+                    <p class="main-contact__phone">
+                        <span class="main-contact__communication--bold">Tell:</span>
+                        123-456-7890
+                    </p>
+                    <p class="main-contact__phone">
+                        <span  class="main-contact__communication--bold">Fax:</span>
+                        123-456-7890
+                    </p>
                 </div>                
                 <form class="main-contact__form">
                     <div class="main-contact__form-wrapper">
-                        <input class="main-contact__form-text" type="text" name="name" placeholder="Name" required>
-                        <input class="main-contact__form-text" type="email" name="email" placeholder="Email" required>
+                        <input class="main-contact__input" type="text" name="name" placeholder="Name" required>
+                        <input class="main-contact__input" type="email" name="email" placeholder="Email" required>
                     </div>
-                    <textarea class="main-contact__form-message" placeholder="Message"></textarea>
+                    <textarea class="main-contact__textarea" placeholder="Message"></textarea>
                     <button class="main-contact__btn" type="button">Send MessaGe</button>
                 </form>                    
             </div>
-        </div>        
+        </div>
+        <div class="map" id="map"></div>
+        <div class="container">
+            <div class="value">
+                <h3 class="value__title">Our Values</h3>
+                <p class="value__text">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.
+                </p>
+                <div class="value__privilege">
+                    <div class="value__variant">
+                        <img class="value__img" src="img/contact/who-we.png" alt="Who we are">
+                        <div class="value__description">
+                            <div class="value__promo">Who We Are</div>
+                            <p class="value__paragraph">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam.
+                            </p>                      
+                        </div>
+                    </div>
+                    <div class="value__variant value__variant--middle">
+                        <img class="value__img" src="img/contact/our-vision.png" alt="Our vision">
+                        <div class="value__description">
+                            <div class="value__promo">Our Vision</div>
+                            <p class="value__paragraph">
+                                Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="value__variant">
+                        <img class="value__img" src="img/contact/our-mission.png" alt="Our mission">
+                        <div class="value__description">
+                            <div class="value__promo">Our Mission</div>
+                            <p class="value__paragraph">
+                                Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
     </main>
 
     <footer class="footer">        
@@ -140,7 +192,8 @@
         </div>
         <div class="copyright">
             &copy; 2016 <span class="copyright--color">Mulitix Theme</span> by ThemeForces. All Rights Reserved.
-        </div>        
+        </div>
     </footer>
+    <script src="js/map.js"></script>
 </body>
 </html>

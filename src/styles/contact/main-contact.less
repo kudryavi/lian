@@ -1,9 +1,31 @@
 .main-contact {
 	padding-top: 85px;
+	padding-bottom: 20px;
 	background-color: #fafafa;
+
+	@media (max-width: 767px) {
+		padding-top: 30px;
+	}
 
 	&__wrapper {
 		display: flex;
+
+		@media (max-width: 767px) {
+			flex-direction: column;
+		}
+	}
+
+	&__contact-inform {
+		width: 30%;
+
+		@media (max-width: 1199px) {
+			width: 35%;
+		}
+
+		@media (max-width: 767px) {
+			width: 100%;
+			margin: 0 auto;
+		}
 	}
 
 	&__title {
@@ -13,29 +35,45 @@
 		letter-spacing: 12px;
 		text-transform: uppercase;
 		color: #000;
+
+		@media (max-width: 991px) {
+			font-size: 22px;
+		}
+
+		@media (max-width: 767px) {
+			font-size: 20px;
+			text-align: center;
+			letter-spacing: 5px;
+		}
 	}
 
-	&__logo {
+	&__slogan {
 		margin-bottom: 10px;
 		font-size: 16px;
 		font-weight: 300;
 		line-height: 30px;
 		letter-spacing: .4px;
 		color: #2f302f;
+
+		@media (max-width: 767px) {
+			text-align: center;
+		}
 	}
 
 	&__line {
 		max-width: 60px;
 		width: 100%;
-		min-height: 1px;
 		margin-bottom: 45px;
+		min-height: 1px;
 		background-color: #000;
-	}
 
-	&__color-weight {
-		margin-right: 10px; 
-		font-weight: 700;
-		color: #222;
+		@media (max-width: 991px) {
+			margin-bottom: 25px;
+		}
+
+		@media (max-width: 767px) {
+			display: none;
+		}
 	}
 
 	&__communication {
@@ -43,6 +81,20 @@
 		font-size: 15px;
 		letter-spacing: .375px;
 		color: #777;
+
+		&--bold {
+			margin-right: 10px; 
+			font-weight: 700;
+			color: #222;
+		}
+
+		@media (max-width: 991px) {
+			margin-bottom: 20px;
+		}
+
+		@media (max-width: 767px) {
+			text-align: center;
+		}
 	}
 
 	&__phone {
@@ -51,22 +103,40 @@
 		font-weight: 700;
 		letter-spacing: .375px;
 		color: #555;
+
+		@media (max-width: 767px) {
+			text-align: center;
+		}
 	}
 
 	&__form {
+		width: 70%;
 		margin-left: 65px;
+		box-sizing: border-box;
+
+		@media (max-width: 1199px) {
+			width: 65%;
+			margin-left: 10px;
+		}
+
+		@media (max-width: 767px) {
+			width: 100%;
+			margin-left: 0;
+			padding: 0 5px;
+		}
 	}
 
 	&__form-wrapper {
 		display: flex;
-		max-width: 700px;
-		width: 100%;
 		justify-content: space-between;
+
+		@media (max-width: 767px) {
+			flex-direction: column;			
+		}
 	}
 
-	&__form-text {		
-		min-width: 360px;
-		width: 100%;
+	&__input {
+		width: 50%;
 		margin-bottom: 35px;
 		padding-left: 10px;
 		font-size: 14px;
@@ -81,15 +151,17 @@
 			margin-right: 30px;
 			border-left: 3px solid #e1e1e1;
 		}
+
+		@media (max-width: 767px) {
+			width: 100%;
+			margin-bottom: 10px;
+		}
 	}
 
-	&__form-message {
-		display: block;
-		min-width: 750px;
+	&__textarea {
 		width: 100%;
 		min-height: 145px;
-		margin: 0 auto 30px;
-		margin-left: 0;
+		margin-bottom: 30px;
 		padding-top: 10px;
 		padding-left: 15px;
 		font-style: italic;
@@ -100,6 +172,11 @@
 		background-color: #fafafa;
 		resize: none;
 		box-sizing: border-box;
+
+		@media (max-width: 767px) {
+			min-height: 70px;
+			margin-bottom: 15px;
+		}
 	}
 
 	&__btn {
@@ -119,6 +196,13 @@
 		&:hover {
 			color: #000;
 			background-color: #fff;
+		}
+
+		@media (max-width: 767px) {
+			margin: 0 auto 15px;
+			padding: 0 15px;
+			font-size: 10px;
+			line-height: 20px;
 		}
 	}
 }
