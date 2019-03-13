@@ -1,0 +1,43 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+.container {
+  width: 1140px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+@media (max-width: 1199px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (max-width: 991px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    width: auto;
+  }
+}
+.wrapper {
+  display: flex;
+}
+.wrapper--around {
+  justify-content: space-around;
+}
+.wrapper--between {
+  justify-content: space-between;
+}
+.wrapper--align {
+  align-items: center;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}

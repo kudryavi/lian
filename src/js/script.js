@@ -5,12 +5,12 @@ $(document).ready(function(){
   });
 
   $('.mobile-menu').click(function() {
-  	$('.mobile-menu__list').toggleClass('mobile-menu__list--open')
+  	$('.mobile-menu__list').toggleClass('mobile-menu__list--open');
   });
 
   $('.search__icon').click(function() {
-  	$('.search__form').toggleClass('search__form--open')
-  })
+  	$('.search__form').toggleClass('search__form--open');
+  });
 });
 
 //   function handler(e) {
